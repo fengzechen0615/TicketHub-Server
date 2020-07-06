@@ -26,7 +26,6 @@ const app = express();
 const configRoutes = require('./routes');
 const cookieParser = require('cookie-parser');
 const session = require('express-session');
-const exphbs = require('express-handlebars');
 
 const static = express.static(__dirname + '/public');
 
@@ -42,7 +41,6 @@ app.use(async (req, res, next) => {
     next();
 });
 
-app.engine('handlebars', exphbs());
 app.set('view engine', 'handlebars');
 
 app.use(
