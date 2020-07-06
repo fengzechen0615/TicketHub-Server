@@ -40,8 +40,6 @@ app.use(async (req, res, next) => {
     next();
 });
 
-app.set('view engine', 'handlebars');
-
 app.use(
     session({
         name: 'UserCookie',
