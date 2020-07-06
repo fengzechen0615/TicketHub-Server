@@ -2,7 +2,7 @@ const MongoClient = require('mongodb').MongoClient;
 
 const mongoConfig = {
     serverUrl: 'mongodb://localhost:27017/',
-    database: 'ticketCollections',
+    database: 'ticketHubCollections',
 };
 
 let _connection = undefined;
